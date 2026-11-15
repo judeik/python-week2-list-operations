@@ -1,51 +1,15 @@
-# Python Week 2 Assignment - List Operations
+# Python list operations
 
-## Description
-This repository contains the solution for Week 2 Python assignment focused on **list operations**.  
-The goal is to practice Python list methods such as `append()`, `insert()`, `extend()`, `pop()`, `sort()`, and `index()` while writing clean and efficient code.
+append/insert/extend/pop/sort/index methods with final-list output.
 
----
+This is a 2026 recovery revision based on https://github.com/judeik/python-week2-list-operations at `629bb061bdab05813477901c6d4c699382e3d0e7`. It is not the original submitted snapshot. Original code, history and remote remain unchanged. The original submission history is retained; this later revision has its own commit.
 
-## Assignment Instructions
-1. Create an empty list called `my_list`.  
-2. Append the elements `10, 20, 30, 40` to `my_list`.  
-3. Insert the value `15` at the second position in the list.  
-4. Extend `my_list` with another list: `[50, 60, 70]`.  
-5. Remove the last element from `my_list`.  
-6. Sort `my_list` in ascending order.  
-7. Find and print the index of the value `30` in `my_list`.
+## Local revision
 
----
+build_list returns a fresh list; command-line output is under a main guard. Expected list and index are unchanged.
 
-## Solution Code
-```bash
-# Week Two Assignment - Python List Operations
+Run with Python 3: `python list-operations.py`. Only the standard library is used. Focused tests are under recovery/phase2, with no CI or real services. New interfaces/validation are recovery improvements, not claims about the original submission. See CHANGE_REVIEW.json for source provenance and proposed changes.
 
-# Step 1: Create an empty list
-my_list = []
+## Publication boundary
 
-# Step 2: Append elements 10, 20, 30, 40
-my_list.append(10)
-my_list.append(20)
-my_list.append(30)
-my_list.append(40)
-
-# Step 3: Insert 15 at the second position (index 1)
-my_list.insert(1, 15)
-
-# Step 4: Extend the list with [50, 60, 70]
-my_list.extend([50, 60, 70])
-
-# Step 5: Remove the last element
-my_list.pop()  # removes 70
-
-# Step 6: Sort the list in ascending order
-my_list.sort()
-
-# Step 7: Find and print the index of 30
-index_of_30 = my_list.index(30)
-print("The index of 30 is:", index_of_30)
-
-# Optional: Print the final list
-print("Final sorted list:", my_list)
-```
+Preserve original authorship/notices in any later approved update. No new blanket license is assigned, no credential/contact record is included, and no original Git history is rewritten. Updating this existing personal repository needs separate approval; do not create a duplicate repository.

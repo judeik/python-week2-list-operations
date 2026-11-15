@@ -1,29 +1,18 @@
-# Week Two Assignment - Python List Operations
+"""2026 recovery improvement: reusable list exercise, no import-time output."""
 
-# Step 1: Create an empty list
-my_list = []
+def build_list():
+    values = []
+    for value in (10, 20, 30, 40):
+        values.append(value)
+    values.insert(1, 15)
+    values.extend([50, 60, 70])
+    values.pop()
+    values.sort()
+    return values
 
-# Step 2: Append elements 10, 20, 30, 40 to the list
-my_list.append(10)
-my_list.append(20)
-my_list.append(30)
-my_list.append(40)
-
-# Step 3: Insert the value 15 at the second position (index 1)
-my_list.insert(1, 15)
-
-# Step 4: Extend my_list with another list [50, 60, 70]
-my_list.extend([50, 60, 70])
-
-# Step 5: Remove the last element from the list
-my_list.pop()  # removes 70
-
-# Step 6: Sort my_list in ascending order
-my_list.sort()
-
-# Step 7: Find and print the index of value 30
-index_of_30 = my_list.index(30)
-print("The index of 30 is:", index_of_30)
-
-# Optional: print the final list for verification
-print("Final sorted list:", my_list)
+def main():
+    values = build_list()
+    print('The index of 30 is:', values.index(30))
+    print('Final sorted list:', values)
+if __name__ == '__main__':
+    main()
